@@ -17,6 +17,11 @@ def numbers(password):
     if ch.isdigit():
       return True
   return False
+def special_characters(password):
+  for ch in password:
+    if not ch.isalnum():
+      return True
+  return False
 def check_strength(password):
   score=0
   if length(password):
