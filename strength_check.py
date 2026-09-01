@@ -26,27 +26,27 @@ def check_strength(password):
   score=0
   if length(password):
     score+=1
-    print("score:1/1")
+    print("Length score:1/1")
   else:
     print("use length more than 15 characters\nscore:0/1\n")
   if lowercase(password):
     score+=1
-    print("score:1/1")
+    print("Lowercase score:1/1")
   else:
     print("use atleast one lowercase character\nscore:0/1\n")
   if uppercase(password):
     score+=1
-    print("score:1/1")
+    print("uppercase score:1/1")
   else:
     print("use atleast one uppercase character\nscore:0/1\n")
   if numbers(password):
     score+=1
-    print("score:1/1")
+    print("number score:1/1")
   else:
     print("use atleast one digit character\nscore:0/1\n")
   if special_characters(password):
     score+=1
-    print("score:1/1")
+    print("special character score:1/1")
   else:
-    print("use atleast ine special character\nscore:0/1\n")
+    print("use atleast one special character\nscore:0/1\n")
   return score
